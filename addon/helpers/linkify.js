@@ -1,7 +1,7 @@
 import Ember from 'ember';
 import urlRegex from 'ember-linkify/utils/url-regex';
 
-export function linkify(textToLinkify, windowTarget) {
+export function linkify([textToLinkify, windowTarget]) {
   windowTarget = windowTarget || "_self";
   textToLinkify = Ember.Handlebars.Utils.escapeExpression(textToLinkify);
 
